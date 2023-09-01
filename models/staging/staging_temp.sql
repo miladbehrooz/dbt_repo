@@ -8,7 +8,7 @@ WITH temperature_daily AS (
            (extracted_data -> 'location' -> 'country')::VARCHAR  AS country,
            ((extracted_data -> 'location' -> 'lat')::VARCHAR)::NUMERIC  AS lat, 
            ((extracted_data -> 'location' -> 'lon')::VARCHAR)::NUMERIC  AS lon
-    FROM {{source("staging", "temp_test")}})
+    FROM {{source("staging", "raw_temmp")}})
 SELECT * 
 FROM temperature_daily
 

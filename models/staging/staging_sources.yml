@@ -3,4 +3,4 @@ sources:
   - name: staging
     schema: public
     tables:
-      - name: temp_test
+      - name: raw_temp

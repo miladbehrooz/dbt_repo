@@ -3,5 +3,4 @@ sources:
   - name: staging
     schema: public
     tables:
-      - name: raw_rates
       - name: temp_test
